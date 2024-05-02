@@ -1,0 +1,8 @@
+services:
+  app:
+    container_name: servidor
+    image: archivos:1.0.0
+    command: sleep 1000
+    build:
+      context: imagen
+      dockerfile: docker

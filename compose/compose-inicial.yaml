@@ -1,0 +1,27 @@
+# version: '3.4'
+
+# Me permite crewar multiples contenedores
+services:
+  app1:
+    container_name: servidor1
+    image: nginx
+  app2:
+    container_name: servidor2
+    image: nginx
+  app3:
+    container_name: servidor3
+    image: nginx
+
+# Me permite crear volumenes para persistir mi informacion
+volumes:
+  volumen1:
+  # volumen2:
+  # volumen3:
+
+# Me peprmite crear las redes para la comunicacion de mis servicios
+networks:
+  red1:
+  # red2:
+
+# configs:
+# secrets:

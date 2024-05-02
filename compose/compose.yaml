@@ -1,0 +1,12 @@
+services:
+  app:
+    container_name: app
+    image: app-compose:1.0.0
+    command: sleep 1000
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - MENSAJE=$MENSAJE_IMPORTANTE
+    environment:
+      - PRUEBA=$PRUEBA_IMPORTANTE
